@@ -236,6 +236,14 @@
 						</button>
 					</view>
 					
+					<!-- 身份选择 -->
+					<view class="cu-item" :style="[{animation: 'show ' + 0.6+ 's 1'}]">
+						<button class='content cu-btn' @click="goSelect">
+							<image src='../../static/me/icon/xiaoxi.png' class='png' mode='aspectFit'></image>
+							<text class='text-lg margin-sm'>身份选择</text>
+						</button>
+					</view>
+					
 					<!-- 关于作者 -->
 					<view class="cu-item" :style="[{animation: 'show ' + 0.6+ 's 1'}]">
 						<button class='content cu-btn' @click="goAboutMe">
@@ -469,6 +477,12 @@
 			goSalary() {
 				uni.navigateTo({
 					url: '../attest/index'
+				})
+			},
+			// 账号认证
+			goSelect() {
+				uni.navigateTo({
+					url: '../identity/index'
 				})
 			},
 			// 加入企业

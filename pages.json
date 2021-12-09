@@ -193,6 +193,14 @@
 		{
 			"path":"pages/demo/index",
 			"style":{}
+		},
+		{
+			"path":"pages/call/call",
+			"style":{}
+		},
+		{
+			"path":"pages/call/callDetail",
+			"style":{}
 		}
 
 	],
@@ -234,10 +242,16 @@
 				"selectedIconPath": "static/img/active_home.png"
 			},
 			{
-				"text": "问题反馈",
+				"text": "工作台",
 				"pagePath": "pages/identity/index",
-				"iconPath": "static/img/problem.png",
-				"selectedIconPath": "static/img/active_problem.png"
+				"iconPath": "static/img/work.png",
+				"selectedIconPath": "static/img/active_work.png"
+			},
+			{
+				"text": "通讯录",
+				"pagePath": "pages/call/call",
+				"iconPath": "static/img/call.png",
+				"selectedIconPath": "static/img/active_call.png"
 			},
 			{
 				"text": "个人中心",

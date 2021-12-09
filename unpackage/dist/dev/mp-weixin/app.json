@@ -32,7 +32,9 @@
     "pages/attest/formal",
     "pages/attest/personal",
     "pages/attest/over",
-    "pages/demo/index"
+    "pages/demo/index",
+    "pages/call/call",
+    "pages/call/callDetail"
   ],
   "subPackages": [],
   "window": {
@@ -52,10 +54,16 @@
         "selectedIconPath": "static/img/active_home.png"
       },
       {
-        "text": "问题反馈",
+        "text": "工作台",
         "pagePath": "pages/identity/index",
-        "iconPath": "static/img/problem.png",
-        "selectedIconPath": "static/img/active_problem.png"
+        "iconPath": "static/img/work.png",
+        "selectedIconPath": "static/img/active_work.png"
+      },
+      {
+        "text": "通讯录",
+        "pagePath": "pages/call/call",
+        "iconPath": "static/img/call.png",
+        "selectedIconPath": "static/img/active_call.png"
       },
       {
         "text": "个人中心",
@@ -76,6 +84,5 @@
   "usingComponents": {
     "cu-custom": "/colorui/components/cu-custom",
     "tn-custom": "/components/TnCustom/TnCustom"
-  },
-  "sitemapLocation": "sitemap.json"
+  }
 }

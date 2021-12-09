@@ -3,7 +3,7 @@
 // 手机热点
 // const BASE_URL = 'http://192.168.43.210:1015'
 // L2
-const BASE_URL = 'http://172.18.0.220:1015'
+const BASE_URL = 'http://localhost:1015'
 export const myRequest = (options) => {
 	return new Promise((resolve, reject) => {
 		uni.request({

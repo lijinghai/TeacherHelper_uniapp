@@ -11,7 +11,7 @@
 			<camera :device-position="device" :flash="flash" @error="error"
 				:style="{ width: '100%',position: 'relative', height: getHeight + 'px' }">
 				<cover-view class="topBox">
-					<cover-view class="topItem text-bold text-xl">经办人姓名：{{info.username}}</cover-view>
+					<!-- <cover-view class="topItem text-bold text-xl">经办人姓名：{{info.username}}</cover-view> -->
 					<cover-view class="topItem">{{nowTime2}}</cover-view>
 					<cover-view class="topItem">{{nowTime}}</cover-view>
 					<cover-view class="topItem">{{address}}</cover-view>
