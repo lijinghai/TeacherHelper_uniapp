@@ -479,7 +479,7 @@
 					url: '../attest/index'
 				})
 			},
-			// 账号认证
+			// 身份选择
 			goSelect() {
 				uni.navigateTo({
 					url: '../identity/index'

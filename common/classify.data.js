@@ -1,185 +1,102 @@
 export default [{
-		"name": "前端开发",
+		"name": "计算机应用一班",
 		"foods": [{
-				"id": 1,
-				"name": "HTML/CSS",
-				"key": "HTML/CSS",
-				"icon": "http://cdn.zhoukaiwen.com/html.jpeg",
-				"cat": 10
-			},
-			{
-				"id": 2,
-				"name": "Javascript",
-				"key": "Javascript",
-				"icon": "http://cdn.zhoukaiwen.com/JavaScript.jpg",
-				"cat": 10
-			},
-			{
-				"id": 3,
-				"name": "Vue.js",
-				"key": "Vue.js",
-				"icon": "http://cdn.zhoukaiwen.com/vue.jpg",
-				"cat": 10
-			},
-			{
-				"id": 4,
-				"name": "React.js",
-				"key": "React.js",
-				"icon": "http://cdn.zhoukaiwen.com/react.png",
-				"cat": 10
-			},
-			{
-				"id": 5,
-				"name": "Angular",
-				"key": "Angular",
-				"icon": "http://cdn.zhoukaiwen.com/angular.jpg",
-				"cat": 10
-			},
-			{
-				"id": 6,
-				"name": "Node.js",
-				"key": "Node.js",
-				"icon": "http://cdn.zhoukaiwen.com/node.jpeg",
-				"cat": 10
-			},
-			{
-				"id": 7,
-				"name": "jQuery",
-				"key": "jQuery",
-				"icon": "http://cdn.zhoukaiwen.com/jquery.jpg",
-				"cat": 10
-			},
-			{
-				"id": 8,
-				"name": "Bootstrap",
-				"key": "Bootstrap",
-				"icon": "http://cdn.zhoukaiwen.com/bootstrap.png",
-				"cat": 10
-			},
-			{
-				"id": 9,
-				"name": "WebApp",
-				"key": "WebApp",
-				"icon": "http://cdn.zhoukaiwen.com/webapp.jpg",
-				"cat": 10
-			},
-			{
-				"id": 10,
-				"name": "小程序",
-				"key": "小程序",
-				"icon": "http://cdn.zhoukaiwen.com/xiaochengxu.jpg",
-				"cat": 10
-			},
-			{
-				"id": 11,
-				"name": "uniApp",
-				"key": "uniApp",
-				"icon": "http://cdn.zhoukaiwen.com/uniapp.png",
-				"cat": 10
-			},
-			{
-				"id": 12,
-				"name": "前端工具",
+				"id": '前1',
+				"name": "何逢君",
 				"key": "前端工具",
 				"icon": "https://cdn.jsdelivr.net/gh/Dorian1015/cdn/img/custom/tuxiang.jpg",
 				"cat": 10
 			},
 			{
-				"id": 12,
-				"name": "前端工具",
+				"id": '前2',
+				"name": "何逢君",
 				"key": "前端工具",
-				"icon": "http://cdn.zhoukaiwen.com/web.png",
+				"icon": "https://cdn.jsdelivr.net/gh/Dorian1015/cdn/img/custom/tuxiang.jpg",
 				"cat": 10
 			},
 			{
-				"id": 12,
-				"name": "前端工具",
+				"id": '前3',
+				"name": "何逢君",
 				"key": "前端工具",
-				"icon": "http://cdn.zhoukaiwen.com/web.png",
+				"icon": "https://cdn.jsdelivr.net/gh/Dorian1015/cdn/img/custom/tuxiang.jpg",
 				"cat": 10
 			},
 			{
-				"id": 12,
-				"name": "前端工具",
+				"id": '前4',
+				"name": "何逢君",
 				"key": "前端工具",
-				"icon": "http://cdn.zhoukaiwen.com/web.png",
+				"icon": "https://cdn.jsdelivr.net/gh/Dorian1015/cdn/img/custom/tuxiang.jpg",
 				"cat": 10
 			},
 			{
-				"id": 12,
-				"name": "前端工具",
+				"id": '前5',
+				"name": "何逢君",
 				"key": "前端工具",
-				"icon": "http://cdn.zhoukaiwen.com/web.png",
+				"icon": "https://cdn.jsdelivr.net/gh/Dorian1015/cdn/img/custom/tuxiang.jpg",
 				"cat": 10
 			},
 			{
-				"id": 12,
-				"name": "前端工具",
+				"id": '前6',
+				"name": "何逢君",
 				"key": "前端工具",
-				"icon": "http://cdn.zhoukaiwen.com/web.png",
+				"icon": "https://cdn.jsdelivr.net/gh/Dorian1015/cdn/img/custom/tuxiang.jpg",
 				"cat": 10
 			},
 			{
-				"id": 12,
-				"name": "前端工具",
+				"id": '前7',
+				"name": "何逢君",
 				"key": "前端工具",
-				"icon": "http://cdn.zhoukaiwen.com/web.png",
+				"icon": "https://cdn.jsdelivr.net/gh/Dorian1015/cdn/img/custom/tuxiang.jpg",
 				"cat": 10
 			},
 			{
-				"id": 12,
-				"name": "前端工具",
+				"id": '前8',
+				"name": "何逢君",
 				"key": "前端工具",
-				"icon": "http://cdn.zhoukaiwen.com/web.png",
+				"icon": "https://cdn.jsdelivr.net/gh/Dorian1015/cdn/img/custom/tuxiang.jpg",
 				"cat": 10
 			},
 			{
-				"id": 12,
-				"name": "前端工具",
+				"id": '前9',
+				"name": "何逢君",
 				"key": "前端工具",
-				"icon": "http://cdn.zhoukaiwen.com/web.png",
+				"icon": "https://cdn.jsdelivr.net/gh/Dorian1015/cdn/img/custom/tuxiang.jpg",
 				"cat": 10
 			},
 			{
-				"id": 12,
-				"name": "前端工具",
+				"id": '前10',
+				"name": "何逢君",
 				"key": "前端工具",
-				"icon": "http://cdn.zhoukaiwen.com/web.png",
+				"icon": "https://cdn.jsdelivr.net/gh/Dorian1015/cdn/img/custom/tuxiang.jpg",
 				"cat": 10
 			},
 			{
-				"id": 12,
-				"name": "前端工具",
+				"id": '前11',
+				"name": "何逢君",
 				"key": "前端工具",
-				"icon": "http://cdn.zhoukaiwen.com/web.png",
+				"icon": "https://cdn.jsdelivr.net/gh/Dorian1015/cdn/img/custom/tuxiang.jpg",
 				"cat": 10
 			},
 			{
-				"id": 12,
-				"name": "前端工具",
+				"id": '前12',
+				"name": "何逢君",
 				"key": "前端工具",
-				"icon": "http://cdn.zhoukaiwen.com/web.png",
+				"icon": "https://cdn.jsdelivr.net/gh/Dorian1015/cdn/img/custom/tuxiang.jpg",
 				"cat": 10
 			},
 			{
-				"id": 12,
-				"name": "前端工具",
+				"id": '前12',
+				"name": "何逢君",
 				"key": "前端工具",
-				"icon": "http://cdn.zhoukaiwen.com/web.png",
+				"icon": "https://cdn.jsdelivr.net/gh/Dorian1015/cdn/img/custom/tuxiang.jpg",
 				"cat": 10
 			},
-			{
-				"id": 12,
-				"name": "前端工具",
-				"key": "前端工具",
-				"icon": "http://cdn.zhoukaiwen.com/web.png",
-				"cat": 10
-			}
 		]
 	},
 	{
-		"name": "后端开发",
+		"name": "计算机应用二班",
 		"foods": [{
+				"id": '后1',
 				"name": "Java",
 				"key": "Java",
 				"icon": "http://cdn.zhoukaiwen.com/java.jpg",
@@ -248,8 +165,9 @@ export default [{
 		]
 	},
 	{
-		"name": "UI设计",
+		"name": "计算机应用三班",
 		"foods": [{
+				"id": 'U1',
 				"name": "设计工具",
 				"key": "设计工具",
 				"icon": "http://cdn.zhoukaiwen.com/sheji.jpg",

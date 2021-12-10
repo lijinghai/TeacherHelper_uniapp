@@ -1,14 +1,19 @@
+<!-- 通讯录页面
+  @author: lijing
+  @email: lijinghailjh@163.com
+  @Date: 2021 12 9
+-->
 <template>
 	<view class="u-wrap">
 		<cu-custom bgColor="bg-gradual-blue" :isBack="false">
 			<!-- <block slot="backText">返回</block> -->
-			<block slot="content">技术栈</block>
+			<block slot="content">通讯录</block>
 		</cu-custom>
 		
 		<view class="u-search-box">
 			<view class="u-search-inner">
 				<u-icon name="search" color="#909399" :size="28"></u-icon>
-				<text class="u-search-text">搜索您想学习的技术栈</text>
+				<text class="u-search-text">搜索您想查找的学生姓名</text>
 			</view>
 		</view>
 		<view class="u-menu-wrap">

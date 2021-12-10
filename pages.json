@@ -201,6 +201,10 @@
 		{
 			"path":"pages/call/callDetail",
 			"style":{}
+		},
+		{
+			"path":"pages/work/index",
+			"style":{}
 		}
 
 	],
@@ -243,7 +247,7 @@
 			},
 			{
 				"text": "工作台",
-				"pagePath": "pages/identity/index",
+				"pagePath": "pages/work/index",
 				"iconPath": "static/img/work.png",
 				"selectedIconPath": "static/img/active_work.png"
 			},

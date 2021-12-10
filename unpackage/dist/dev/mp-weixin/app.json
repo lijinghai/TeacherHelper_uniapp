@@ -34,7 +34,8 @@
     "pages/attest/over",
     "pages/demo/index",
     "pages/call/call",
-    "pages/call/callDetail"
+    "pages/call/callDetail",
+    "pages/work/index"
   ],
   "subPackages": [],
   "window": {
@@ -55,7 +56,7 @@
       },
       {
         "text": "工作台",
-        "pagePath": "pages/identity/index",
+        "pagePath": "pages/work/index",
         "iconPath": "static/img/work.png",
         "selectedIconPath": "static/img/active_work.png"
       },
@@ -84,5 +85,6 @@
   "usingComponents": {
     "cu-custom": "/colorui/components/cu-custom",
     "tn-custom": "/components/TnCustom/TnCustom"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

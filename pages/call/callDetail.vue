@@ -1,3 +1,8 @@
+<!-- 通讯录详情页面
+  @author: lijing
+  @email: lijinghailjh@163.com
+  @Date: 2021 12 9
+-->
 <template>
 	<view class="u-wrap">
 		<cu-custom bgColor="bg-gradual-blue" :isBack="true">

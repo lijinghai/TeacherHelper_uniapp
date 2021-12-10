@@ -15,8 +15,17 @@
 		<view class="titleZ text-center align-center">
 			<text class="text-bold">关于作者</text>
 			<view class="contentZ">
-				<text class="text-xl">项目作者:<text class="text-bold">李京海</text>，一名大二(2021 6 1)在读的全栈程序员，坐标南京，热爱编程，追求开源</text>
+				<text class="text-xl">项目作者:<text class="text-bold">何逢君(李京海)</text>，一名大二(2021 6 1)在读的全栈程序员，坐标南京，热爱编程，追求开源</text>
 			</view>
+		</view>
+		
+		<view class="titleZ text-center align-center margin-top-xl">
+			<text class="text-bold">我希望</text>
+			<view class="contentZ margin-top-lg">
+				<text class="text-xl text-bold">「每一个」</text>
+				<text class="text-xl">：使用我软件的用户，都可以像孩子在海边拾贝时一样的快乐。</text>
+			</view>
+			
 		</view>
 
 		<view class="titleZ text-center align-center margin-top-xl">
@@ -26,13 +35,13 @@
 				<text class="text-xl">：lijinghailjh@163.com</text>
 			</view>
 			<view class="contentZ" style="margin-top: 40rpx;">
-				<text class="text-xl text-bold">「Github」</text>
-				<text class="text-xl">：https://github.com/Dorian1015</text>
+				<text class="text-xl text-bold">Github</text>
+				<text class="text-xl">：https://github.com/lijinghailjh</text>
 			</view>
-			<view class="contentZ" style="margin-top: 40rpx;">
+		<!-- 	<view class="contentZ" style="margin-top: 40rpx;">
 				<text class="text-xl text-bold">「Gitee」</text>
 				<text class="text-xl">：https://gitee.com/Dorian15</text>
-			</view>
+			</view> -->
 		</view>
 
 		<button class='' open-type="contact">
