@@ -5,6 +5,11 @@
 -->
 <template name="home">
 	<view>
+		<cu-custom bgColor="bg-gradual-orange" :isBack="false">
+			<!-- <block slot="backText">返回</block> -->
+			<block slot="content">工作台</block>
+		</cu-custom>
+		
 		<scroll-view>
 			<!-- 轮播 -->
 			<swiper class="screen-swiper square-dot"  :indicator-dots="true" :circular="true"
