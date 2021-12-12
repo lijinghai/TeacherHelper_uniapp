@@ -10,12 +10,24 @@
 			<block slot="content">通讯录</block>
 		</cu-custom>
 		
+	<view class="cu-bar bg-white search fixed" :style="[{top:CustomBar + 'px'}]">
+		<view class="search-form round">
+			<text class="cuIcon-search"></text>
+			<input type="text" v-model="keyword" placeholder="输入搜索的关键词" confirm-type="search" @confirm="searchUserByKey"></input>
+		</view>
+		<view class="action">
+			<button class="cu-btn bg-gradual-blue shadow-blur round" @tap="searchUserByKey">搜索</button>
+		</view>
+	</view>
+		
 		<view class="u-search-box">
 			<view class="u-search-inner">
 				<u-icon name="search" color="#909399" :size="28"></u-icon>
 				<text class="u-search-text">搜索您想查找的学生姓名</text>
 			</view>
 		</view>
+		
+		
 		<view class="u-menu-wrap">
 			<scroll-view scroll-y scroll-with-animation class="u-tab-view menu-scroll-view" :scroll-top="scrollTop">
 				<view v-for="(item,index) in tabbar" :key="index" class="u-tab-item" :class="[current==index ? 'u-tab-item-active' : '']"
@@ -49,6 +61,7 @@
 	export default {
 		data() {
 			return {
+				CustomBar: this.CustomBar,
 				tabbar: classifyData,
 				scrollTop: 0, //tab标题的滚动条位置
 				current: 0, // 预设当前项的值
@@ -60,6 +73,45 @@
 			
 		},
 		methods: {
+			// 搜索
+			searchUserByKey(){
+				this.loadInfo()
+			},
+			loadInfo(){
+				// this.$http.get(this.queryUserByKeyWord,{params:{'keyword':this.keyword}}).then(res=>{
+			 //         if (res.data.success) {
+				// 		console.log("res",res)
+				// 	    let arr=res.data.result;
+				// 		let szuArr=[];
+				// 	    this.userList = arr.map(item => {
+				// 	        let { id,realname,avatar,username,phone,email,post,orgCode} = item
+				// 			let pinYin = username.toUpperCase();
+				// 			if(realname){
+				// 				//TODO 判断汉字的位置
+				// 				if(/.*[\u4e00-\u9fa5]+.*$/.test(realname)){
+				// 					pinYin=vPinyin.chineseToPinYin(realname);
+				// 				}
+				// 			}
+				// 			if(avatar){
+				// 				avatar=getFileAccessHttpUrl(avatar);
+				// 			}
+				// 	        let event = {
+				// 	          id, realname ,avatar,username,phone,email,post,orgCode,
+				// 			  szm:pinYin.substr(0,1)
+				// 	        }
+				// 			szuArr.push(event.szm)
+				// 	        return event
+				// 	      })
+						 
+				// 		  this.list=this.list.filter(item=>szuArr.indexOf(item.name)!=-1)	
+				// 	      //this.list.unshift({name:"#"})
+				// 	}
+				// }).catch(err => {
+				// 	console.log(err);
+				// });
+				
+			},
+			// 点击图标跳转
 			previewImg(current) {
 				console.log("点击了")
 				console.log(current)
