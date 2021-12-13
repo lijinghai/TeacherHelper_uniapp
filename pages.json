@@ -205,6 +205,22 @@
 		{
 			"path":"pages/work/index",
 			"style":{}
+		},
+		{
+			"path":"pages/msg/details",
+			"style":{}
+		},
+		{
+			"path":"pages/msg/examine-item",
+			"style":{}
+		},
+		{
+			"path":"pages/msg/form",
+			"style":{}
+		},
+		{
+			"path":"pages/msg/list-item",
+			"style":{}
 		}
 
 	],

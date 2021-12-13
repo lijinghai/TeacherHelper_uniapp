@@ -25,7 +25,7 @@
 				<view class="text-center" :style="[{animation: 'show ' + 0.4+ 's 1'}]">
 					<image src="https://cdn.jsdelivr.net/gh/Dorian1015/cdn/img/custom/tuxiang.jpg" mode='aspectFit'
 						class="zai-logo "></image>
-					<view class="zai-title text-shadow ">辅利Helper</view>
+					<view class="zai-title text-shadow ">Helper</view>
 
 					<!-- 欢迎登录 -->
 					<view class="cu-bar ">

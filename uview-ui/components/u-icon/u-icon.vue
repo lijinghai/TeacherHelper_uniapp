@@ -19,7 +19,6 @@
 		</text>
 	</view>
 </template>
-
 <script>
 /**
  * icon 图标
@@ -253,6 +252,8 @@ export default {
 			return classes
 		}
 	},
+	mounted(){
+	},
 	methods: {
 		click() {
 			this.$emit('click', this.index)
@@ -263,7 +264,6 @@ export default {
 	}
 }
 </script>
-
 <style scoped lang="scss">
 @import "../../libs/css/style.components.scss";
 @import '../../iconfont.css';

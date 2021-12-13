@@ -35,7 +35,11 @@
     "pages/demo/index",
     "pages/call/call",
     "pages/call/callDetail",
-    "pages/work/index"
+    "pages/work/index",
+    "pages/msg/details",
+    "pages/msg/examine-item",
+    "pages/msg/form",
+    "pages/msg/list-item"
   ],
   "subPackages": [],
   "window": {

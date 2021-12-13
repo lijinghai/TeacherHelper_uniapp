@@ -394,12 +394,18 @@ export default {
 				let beforeResponse = this.beforeUpload.bind(this.$u.$parent.call(this))(index, this.lists);
 				// 判断是否返回了promise
 				if (!!beforeResponse && typeof beforeResponse.then === 'function') {
+					let error = false;
 					await beforeResponse.then(res => {
 						// promise返回成功，不进行动作，继续上传
 					}).catch(err => {
 						// 进入catch回调的话，继续下一张
-						return this.uploadFile(index + 1);
+						// return this.uploadFile(index + 1);
+						// 在 cache 中 return 只是返回本方法，并不是返回 uploadFile 方法，需要在外层进行返回 aidex
+						error = true;
 					})
+					if (error){
+						return this.uploadFile(index + 1);
+					}
 				} else if(beforeResponse === false) {
 					// 如果返回false，继续下一张图片的上传
 					return this.uploadFile(index + 1);

@@ -25,8 +25,9 @@
 	@import "../../libs/css/style.components.scss";
 	
 	.u-time-axis {
-		padding-left: 40rpx;
+		padding-left: 50rpx;
 		position: relative;
+		background: #fff;
 	}
 
 	.u-time-axis::before {

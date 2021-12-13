@@ -170,7 +170,7 @@
 		color: $u-main-color;
 		font-size: 30rpx;
 		line-height: 1;
-		padding: 24rpx 0;
+		padding: 8rpx 0 24rpx;
 		text-align: left;
 	}
 

@@ -203,6 +203,10 @@ export default {
 			// #endif
 		},
 		init() {
+			// 如果没有数据的时候多处报未定义 aidex
+			if (!this.list || this.list.length == 0){
+				return
+			}
 			this.setColumnNum();
 			this.setDefaultSelector();
 			this.setColumnData();
@@ -225,7 +229,7 @@ export default {
 				let num = 1;
 				let column = this.list;
 				// 只要有元素并且第一个元素有children属性，继续历遍
-				while(column[0][this.childName]) {
+				while(column[0] && column[0][this.childName]) { // 增加 column[0] 判断，如果没有数据的时候会报 undefined aidex
 					column = column[0] ? column[0][this.childName] : {};
 					num ++;
 				}
@@ -294,6 +298,9 @@ export default {
 				// 在历遍的过程中，可能由于上一步修改this.columnData，导致产生连锁反应，程序触发columnChange，会有多次调用
 				// 只有在最后一次数据稳定后的结果是正确的，此前的历遍中，可能会产生undefined，故需要判断
 				columnIndex.map((item, index) => {
+					if (!this.columnData[index]){
+						return; // 如果列树不固定，会报空 aidex
+					}
 					let data = this.columnData[index][columnIndex[index]];
 					let tmp = {
 						value: data ? data[this.valueName] : null,
@@ -339,7 +346,7 @@ export default {
 			// #ifdef MP-WEIXIN
 			if (this.moving) return;
 			// #endif
-			if (event) this.$emit(event, this.selectValue);
+			if (event) this.$emit(event, this.selectValue, this.defaultSelector);
 			this.close();
 		},
 		selectHandler() {

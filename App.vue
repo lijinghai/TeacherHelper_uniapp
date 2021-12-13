@@ -140,7 +140,9 @@
 
 	}
 </script>
-
+<style>
+	@import url("~@/static/iconfont/iconfont.css");
+</style>
 <style lang="scss">
 
 	/* 导入Color-ui */

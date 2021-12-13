@@ -1,5 +1,7 @@
 {
   "usingComponents": {
+    "u-search": "/uview-ui/components/u-search/u-search",
+    "u-badge": "/uview-ui/components/u-badge/u-badge",
     "add-tip": "/components/wxcomponents/struggler-uniapp-add-tip/struggler-uniapp-add-tip"
   }
 }
