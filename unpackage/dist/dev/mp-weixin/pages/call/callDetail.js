@@ -207,6 +207,29 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 
 {
@@ -214,18 +237,23 @@ var _default =
     return {
       id: "",
       phone: "",
+      SId: "",
+      identityCard: "",
       email: '',
       company: '',
       NavBarColor: this.NavBarColor,
       avatar: '',
       modalName: null,
+      departName: '',
       infoList: {
+        identityCard: '34088***********',
         realname: '',
+        SId: '19302141',
         post: '何逢君',
         avatar: 'https://cdn.jsdelivr.net/gh/Dorian1015/cdn/img/custom/tuxiang.jpg',
         phone: '15178672798',
         email: 'lijinghailjh@163.com',
-        department: '技术部',
+        departName: '19软件2班',
         title: '标题' } };
 
 

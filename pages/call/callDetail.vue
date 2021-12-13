@@ -28,6 +28,28 @@
 			
 			<view class="cu-list menu margin-top">
 				
+				<!-- 学号 -->
+				<view class="cu-item animation-slide-bottom" :style="[{animation: 'show ' + 0.6+ 's 1'}]">
+					<view class="content">
+						<image src='../../static/calldetailIcon/xuehao.png' class='png' mode='aspectFit'></image>
+						<text class="text-grey">学号</text>
+					</view>
+					<view class="action">
+						<text class="text-grey">{{infoList.SId?infoList.SId:SId}}</text>
+					</view>
+				</view>
+				
+				<!-- 身份证号码 -->
+				<view class="cu-item animation-slide-bottom" :style="[{animation: 'show ' + 0.6+ 's 1'}]">
+					<view class="content">
+						<image src='../../static/calldetailIcon/shengfengzheng.png' class='png' mode='aspectFit'></image>
+						<text class="text-grey">身份证号码</text>
+					</view>
+					<view class="action">
+						<text class="text-grey">{{infoList.identityCard?infoList.identityCard:identityCard}}</text>
+					</view>
+				</view>
+				
 				<!-- 拨打电话 -->
 				<view class="cu-item" @click="callPhoneNumber" :style="[{animation: 'show ' + 0.6+ 's 1'}]">
 					<view class='content'>
@@ -59,10 +81,11 @@
 					</view>
 					<view class="cu-item animation-slide-bottom" :style="[{animation: 'show ' + 0.6+ 's 1'}]">
 						<view class="content">
-							<text class="text-grey">部门</text>
+							<image src='../../static/calldetailIcon/banji.png' class='png' mode='aspectFit'></image>
+							<text class="text-grey">班级</text>
 						</view>
 						<view class="action">
-							<text class="text-grey">{{infoList.departName}}</text>
+							<text class="text-grey">{{infoList.departName?infoList.departName:departName}}</text>
 						</view>
 					</view>
 					
@@ -82,18 +105,23 @@
 			return {
 				id: "",
 				phone: "",
+				SId: "",
+				identityCard: "",
 				email: '',
 				company: '',
 				NavBarColor:this.NavBarColor,
 				avatar:'',
 				modalName: null,
+				departName: '',
 				infoList:{
+					identityCard: '34088***********',
 					realname:'',
+					SId: '19302141',
 					post:'何逢君',
 					avatar:'https://cdn.jsdelivr.net/gh/Dorian1015/cdn/img/custom/tuxiang.jpg',
 					phone: '15178672798',
 					email:'lijinghailjh@163.com',
-					department:'技术部',
+					departName:'19软件2班',
 					title:'标题'
 				},
 			}
