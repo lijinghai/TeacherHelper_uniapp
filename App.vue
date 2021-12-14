@@ -150,6 +150,7 @@
 	@import "colorui/icon.css";
 	@import "uview-ui/index.scss";
 	
+	@import "common/my.scss";
 	.nav-list {
 		display: flex;
 		flex-wrap: wrap;

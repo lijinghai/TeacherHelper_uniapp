@@ -6,6 +6,7 @@
 		</cu-custom>
 
 		<add-tip :tip="tip" :duration="duration" />
+		
 		<view class="wrap">
 			<view class="search">
 				<u-search v-model="keywords" @custom="search" @search="search"></u-search>

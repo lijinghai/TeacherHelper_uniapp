@@ -35,6 +35,7 @@
 				<u-cell-item title="请假事由" label="感冒了,请假一天,望领导批准!"  :arrow="false" :border-bottom="false"></u-cell-item>
 			</u-cell-group>
 			<u-gap height="20" bg-color="#f5f5f5"></u-gap>
+			
 			<u-time-line>
 				<u-time-line-item nodeTop="2">
 						<!-- 此处自定义了左边内容，用一个图标替代 -->
@@ -75,6 +76,8 @@
 					</template>
 				</u-time-line-item>
 			</u-time-line>
+			
+			
 			<u-row gutter="32" class="bottom-box" justify="center">
 				<u-col span="5">
 					<view><u-button :plain="true" type="primary" shape="circle" @click="navTo('/pages/home/index')">拒绝</u-button></view>
@@ -160,6 +163,7 @@
 export default {
 		data() {
 			return {
+			avatarUrl:'',
 			show: false,
 			list: [{
 				name: '申请详情'

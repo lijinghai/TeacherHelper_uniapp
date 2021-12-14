@@ -8615,6 +8615,95 @@ u-dropdown {
 
 
 /* end-头条小程序编译后页面有组件名的元素，特别处理--end */
+
+
+
+
+
+
+
+
+
+
+
+/*!
+ * Copyright (c) 2013-Now http://aidex.vip All rights reserved.
+ * @author aidex
+ * @version 2020-9-1
+ */
+.wrap .search {
+  padding: 20rpx 20rpx 0;
+  background: #f8f8f8;
+  height: 105rpx;
+}
+.wrap .scroll-list {
+  height: calc(100vh - 0px - 0px - 105rpx);
+  width: 100%;
+}
+.wrap .scroll-list .loadmore {
+  padding: 30rpx;
+}
+.wrap .box {
+  padding-bottom: 10rpx;
+}
+.wrap .box .item {
+  margin: 0 20rpx 20rpx;
+  padding: 8rpx 20rpx;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+  font-size: 28rpx;
+}
+.wrap .box .item .title {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding-left: 15rpx;
+  align-items: center;
+}
+.wrap .box .item .title .text {
+  margin: 0 20rpx;
+  font-size: 35rpx;
+  font-weight: bold;
+}
+.wrap .list .u-cell-item-box .u-swipe-content {
+  width: 750rpx;
+}
+.wrap .list .u-cell-item-box .u-cell_title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  min-width: 655rpx;
+}
+.wrap .list .u-cell-item-box .u-border-bottom:last-child:after {
+  border-bottom: 0;
+}
+.wrap .form {
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx 30rpx;
+}
+.wrap .form .u-cell-item-box {
+  border-radius: 20rpx;
+}
+.wrap .form-footer {
+  display: flex;
+  margin: 10rpx;
+  padding-bottom: 30rpx;
+}
+.wrap .form-footer .btn {
+  flex: 1;
+  margin: 20rpx;
+}
+.wrap .u-cell-box .u-cell {
+  font-size: 30rpx;
+}
+.wrap .u-cell-box .u-cell_title {
+  font-size: 30rpx;
+}
+.wrap .u-cell-box .u-cell__left-icon-wrap {
+  margin-right: 18rpx;
+}
 .nav-list {
   display: flex;
   flex-wrap: wrap;

@@ -45,6 +45,7 @@ Vue.component('tn-custom', TnCustom)
 import uView from 'uview-ui';
 Vue.use(uView);
 
+
 // tip
 import tip from'./utils/tip.js'
 Vue.prototype.$tip=tip;
