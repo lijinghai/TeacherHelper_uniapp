@@ -13,7 +13,8 @@
 	<view class="cu-bar bg-white search fixed" :style="[{top:CustomBar + 'px'}]">
 		<view class="search-form round">
 			<text class="cuIcon-search"></text>
-			<input type="text" v-model="keyword" placeholder="输入搜索的关键词" confirm-type="search" @confirm="searchUserByKey"></input>
+			<input type="text" v-model="keywords" placeholder="输入搜索的关键词" confirm-type="search" @confirm="searchUserByKey"></input>
+			<!-- <u-search v-model="keywords" @custom="search" @search="search"></u-search> -->
 		</view>
 		<view class="action">
 			<button class="cu-btn bg-gradual-blue shadow-blur round" @tap="searchUserByKey">搜索</button>
@@ -67,6 +68,7 @@
 				current: 0, // 预设当前项的值
 				menuHeight: 0, // 左边菜单的高度
 				menuItemHeight: 0, // 左边菜单item的高度
+				keywords: ''
 			}
 		},
 		computed: {
@@ -74,8 +76,9 @@
 		},
 		methods: {
 			// 搜索
-			searchUserByKey(){
-				this.loadInfo()
+			searchUserByKey(value){
+				// this.loadInfo()
+				this.$u.toast('搜索内容为：' + value)
 			},
 			loadInfo(){
 				// this.$http.get(this.queryUserByKeyWord,{params:{'keyword':this.keyword}}).then(res=>{

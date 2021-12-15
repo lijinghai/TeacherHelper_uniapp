@@ -2,6 +2,7 @@
   "pages": [
     "pages/login/login_v2",
     "pages/index/index",
+    "pages/index/index01",
     "pages/people/index",
     "pages/register/register",
     "pages/forget/forget",
@@ -53,10 +54,10 @@
     "color": "#C0C0C0",
     "list": [
       {
-        "text": "首页",
+        "text": "消息",
         "pagePath": "pages/index/index",
-        "iconPath": "static/img/home.png",
-        "selectedIconPath": "static/img/active_home.png"
+        "iconPath": "static/img/message.png",
+        "selectedIconPath": "static/img/active_message.png"
       },
       {
         "text": "工作台",
@@ -89,6 +90,5 @@
   "usingComponents": {
     "cu-custom": "/colorui/components/cu-custom",
     "tn-custom": "/components/TnCustom/TnCustom"
-  },
-  "sitemapLocation": "sitemap.json"
+  }
 }

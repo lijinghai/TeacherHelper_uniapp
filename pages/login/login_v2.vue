@@ -258,7 +258,7 @@
 
 						console.log("token" + res.data.data.token)
 						uni.switchTab({
-							url: '../index/index'
+							url: '../work/index'
 						})
 						this.$tip.success('登录成功!')
 					} else if (res.data.code === 500) { // 获取数据失败

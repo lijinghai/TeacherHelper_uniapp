@@ -1,102 +1,126 @@
 <template>
 	<view>
-		<cu-custom bgColor="bg-gradual-blue" :isBack="false">
-			<!-- <block slot="backText">返回</block> -->
-			<block slot="content">首页</block>
-		</cu-custom>
+		<scroll-view :scroll-y="modalName==null" class="page" :class="modalName!=null?'show':''">
+			<cu-custom bgColor="bg-gradual-blue" :isBack="false">
+				<!-- <block slot="backText">返回</block> -->
+				<block slot="content">首页</block>
+			</cu-custom>
+			<add-tip :tip="tip" :duration="duration" />
 
-		<add-tip :tip="tip" :duration="duration" />
-		
-		<view class="wrap">
-			<view class="search">
-				<u-search v-model="keywords" @custom="search" @search="search"></u-search>
+			<view class="wrap">
+				<view class="search">
+					<u-search v-model="keywords" @custom="search" @search="search"></u-search>
+				</view>
 			</view>
-			<scroll-view class="scroll-list" scroll-y="true">
-				<view class="uni-list">
-					<uni-view class="uni-list-cell">
-						<view class="uni-media-list" @click="navTo('/pages/msg/list-item')">
-							<view class="home-icon icon-color03">
-								<i class="iconfont icon-tongzhi1">
-									<u-badge type="error" count="2"></u-badge>
-								</i>
+
+			<view class="cu-list menu-avatar">
+				<!-- 公告通知 -->
+				<view class="cu-item" @click="navTo('/pages/msg/list-item')">
+					<view class="cu-avatar round lg"
+						style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg);">
+					</view>
+					<view class="content">
+						<view class="text-grey">公告通知</view>
+						<view class="text-gray text-sm flex">
+							<view class="text-cut">
+								<text class="cuIcon-infofill text-red  margin-right-xs"></text>
+								关于元旦放假的通知
 							</view>
-							<uni-view class="uni-media-list-body">
-								<uni-view class="uni-media-list-text-top"><span>通知公告</span><span
-										style="font-size: 26rpx;color: #999999;">12:35</span></uni-view>
-								<uni-view class="uni-media-list-text-bottom">
-									<uni-text><span>关于元旦放假的通知</span></uni-text>
-								</uni-view>
-							</uni-view>
 						</view>
-					</uni-view>
-					<view class="uni-list-cell" @click="navTo('/pages/msg/list-item')">
-						<uni-view class="uni-media-list">
-							<view class="home-icon icon-color04">
-								<i class="iconfont icon-xinwen">
-									<u-badge type="error" count="1"></u-badge>
-								</i>
-							</view>
-							<uni-view class="uni-media-list-body">
-								<uni-view class="uni-media-list-text-top"><span>新闻动态</span><span
-										style="font-size: 26rpx;color: #999999;">09:07</span></uni-view>
-								<uni-view class="uni-media-list-text-bottom">
-									<uni-text><span>神十三航天员圆满完成出舱任务</span></uni-text>
-								</uni-view>
-							</uni-view>
-						</uni-view>
 					</view>
-					<view class="uni-list-cell" @click="navTo('/pages/msg/examine-item')">
-						<uni-view class="uni-media-list">
-							<view class="home-icon icon-color06">
-								<i class="iconfont icon-msg-system"></i>
-							</view>
-							<uni-view class="uni-media-list-body">
-								<uni-view class="uni-media-list-text-top"><span>日常办公</span><span
-										style="font-size: 26rpx;color: #999999;">11月07日</span></uni-view>
-								<uni-view class="uni-media-list-text-bottom">
-									<uni-text><span>王梓涵提交的“请假申请”待你审批</span></uni-text>
-								</uni-view>
-							</uni-view>
-						</uni-view>
-					</view>
-					<view class="uni-list-cell" @click="navTo('/pages/msg/list-item')">
-						<uni-view class="uni-media-list">
-							<view class="home-icon icon-color12">
-								<i class="iconfont icon-baoxiao"></i>
-							</view>
-							<uni-view class="uni-media-list-body">
-								<uni-view class="uni-media-list-text-top"><span>网上报销</span><span
-										style="font-size: 26rpx;color: #999999;">11月06日</span></uni-view>
-								<uni-view class="uni-media-list-text-bottom">
-									<uni-text><span>吴天祥提交的“差旅费报销”待你审批</span></uni-text>
-								</uni-view>
-							</uni-view>
-						</uni-view>
-					</view>
-					<view class="uni-list-cell" @click="navTo('/pages/msg/list-item')">
-						<uni-view class="uni-media-list">
-							<view class="home-icon icon-color04">
-								<i class="iconfont icon-tongzhi"></i>
-							</view>
-							<uni-view class="uni-media-list-body">
-								<uni-view class="uni-media-list-text-top"><span>我的邮件</span><span
-										style="font-size: 26rpx;color: #999999;">11月06日</span></uni-view>
-								<uni-view class="uni-media-list-text-bottom">
-									<uni-text><span>邮件提醒：邮件提醒：15封新邮件未读</span></uni-text>
-								</uni-view>
-							</uni-view>
-						</uni-view>
+					<view class="action">
+						<view class="text-grey text-xs">22:20</view>
+						<view class="cu-tag round bg-grey sm">5</view>
 					</view>
 				</view>
-			</scroll-view>
-	
+				<!-- 新闻动态 -->
+				<view class="cu-item" @click="navTo('/pages/msg/list-item')">
+					<view class="cu-avatar round lg"
+						style="background-image:url(https://ossweb-img.qq.com/images/lol/img/champion/Taric.png);">
+						<view class="cu-tag badge">99+</view>
+					</view>
+					<view class="content">
+						<view class="text-grey">
+							<view class="text-cut">新闻动态</view>
+							<view class="cu-tag round bg-orange sm">新闻</view>
+						</view>
+						<view class="text-gray text-sm flex">
+							<view class="text-cut">
+								神十三航天员圆满完成出舱任务
+							</view>
+						</view>
+					</view>
+					<view class="action">
+						<view class="text-grey text-xs">22:20</view>
+						<view class="cuIcon-notice_forbid_fill text-gray"></view>
+					</view>
+				</view>
+				<!-- 日常办公 -->
+				<view class="cu-item " @click="navTo('/pages/msg/examine-item')">
+					<view class="cu-avatar radius lg"
+						style="background-image:url(https://ossweb-img.qq.com/images/lol/img/champion/Morgana.png);">
+					</view>
+					<view class="content">
+						<view class="text-pink">
+							<view class="text-cut">日常办公</view>
+						</view>
+						<view class="text-gray text-sm flex">
+							<view class="text-cut">何逢君提交的“请假申请”待你审批</view>
+						</view>
+					</view>
+					<view class="action">
+						<view class="text-grey text-xs">22:20</view>
+						<view class="cu-tag round bg-red sm">5</view>
+					</view>
+				</view>
+				<!--网上报销  -->
+				<view class="cu-item grayscale" @click="navTo('/pages/msg/list-item')">
+					<view class="cu-avatar radius lg"
+						style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big81007.jpg);">
+					</view>
+					<view class="content">
+						<view>
+							<view class="text-cut">网上报销</view>
+							<view class="cu-tag round bg-orange sm">等待报销...</view>
+						</view>
+						<view class="text-gray text-sm flex">
+							<view class="text-cut">吴天祥提交的“差旅费报销”待你审批</view>
+						</view>
+					</view>
+					<view class="action">
+						<view class="text-grey text-xs">22:20</view>
+						<view class="cu-tag round bg-red sm">5</view>
+					</view>
+				</view>
+				<!-- 我的邮件 -->
+				<view class="cu-item cur" @click="navTo('/pages/msg/list-item')">
+					<view class="cu-avatar radius lg"
+						style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big81020.jpg);">
+						<view class="cu-tag badge"></view>
+					</view>
+					<view class="content">
+						<view>
+							<view class="text-cut">我的邮件</view>
+							<view class="cu-tag round bg-orange sm">6人</view>
+						</view>
+						<view class="text-gray text-sm flex">
+							<view class="text-cut"> 邮件提醒：<text
+									class="cuIcon-locationfill text-orange margin-right-xs"></text> 邮件提醒：15封新邮件未读</view>
+						</view>
+					</view>
+					<view class="action">
+						<view class="text-grey text-xs">22:20</view>
+						<view class="cuIcon-notice_forbid_fill text-gray"></view>
+					</view>
+				</view>
+			</view>
+
+
+		</scroll-view>
 	</view>
-</view>
 </template>
+
 <script>
-	/**
-	 * Copyright (c) 2013-Now http://aidex.vip All rights reserved.
-	 */
 	import addTip from '../../components/wxcomponents/struggler-uniapp-add-tip/struggler-uniapp-add-tip.vue';
 	export default {
 		components: {
@@ -105,11 +129,9 @@
 		data() {
 			return {
 				tip: '点击「添加小程序」，下次访问更便捷',
+				modalName: null,
 				keywords: ''
 			};
-		},
-		onLoad() {
-
 		},
 		methods: {
 			navTo(url) {
@@ -122,56 +144,38 @@
 			}
 
 		}
-	};
+	}
 </script>
+
 <style lang="scss">
 	@import '@/common/uni2.css';
 
-	page {
-		background-color: #f5f5f5;
+	.page {
+		height: 100Vh;
+		width: 100vw;
 	}
 
 	.wrap .search {
 		background: #ffffff;
 	}
 
-	.uni-title {
-		font-size: 30rpx;
-		color: #333333;
-		padding: 10px;
-		background: #fff;
-		border-top: 1px solid #ededed;
-		margin-top: 20rpx;
-	}
-
-	.uni-media-list {
-		padding: 15px 15px;
-
-	}
-
-	.uni-media-list-body {
-		height: 42px;
-		padding-left: 20rpx;
-	}
-
-	.uni-media-list-text-top {
-		height: 40rpx;
+	.page.show {
 		overflow: hidden;
-		width: 100%;
-		line-height: 40rpx;
-		font-size: 32rpx;
-		display: flex;
-		justify-content: space-between;
 	}
 
-	.uni-media-list-text-bottom {
-		width: 100%;
-		line-height: 24rpx;
-		font-size: 26rpx;
-		color: #666666;
+	.switch-sex::after {
+		content: "\e716";
+	}
 
-		span {
-			margin-right: 10rpx;
-		}
+	.switch-sex::before {
+		content: "\e7a9";
+	}
+
+	.switch-music::after {
+		content: "\e66a";
+	}
+
+	.switch-music::before {
+		content: "\e6db";
 	}
 </style>

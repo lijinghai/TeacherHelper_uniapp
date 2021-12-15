@@ -97,9 +97,6 @@ try {
   components = {
     uSearch: function() {
       return __webpack_require__.e(/*! import() | uview-ui/components/u-search/u-search */ "uview-ui/components/u-search/u-search").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-search/u-search.vue */ 380))
-    },
-    uBadge: function() {
-      return __webpack_require__.e(/*! import() | uview-ui/components/u-badge/u-badge */ "uview-ui/components/u-badge/u-badge").then(__webpack_require__.bind(null, /*! @/uview-ui/components/u-badge/u-badge.vue */ 387))
     }
   }
 } catch (e) {
@@ -256,6 +253,30 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
   components: {
     addTip: addTip },
@@ -263,10 +284,8 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       tip: '点击「添加小程序」，下次访问更便捷',
+      modalName: null,
       keywords: '' };
-
-  },
-  onLoad: function onLoad() {
 
   },
   methods: {

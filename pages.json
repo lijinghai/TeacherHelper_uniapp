@@ -19,6 +19,13 @@
 			}
 		},
 		{
+			"path": "pages/index/index01",
+			"style": {
+				// "navigationBarTitleText": "一章一码",
+				// "enablePullDownRefresh": true
+			}
+		},
+		{
 			"path": "pages/people/index",
 			"style": {
 				"navigationBarTitleText": "个人中心"
@@ -256,10 +263,10 @@
 		"selectedColor": "#87CEFF",
 		"color": "#C0C0C0",
 		"list": [{
-				"text": "首页",
+				"text": "消息",
 				"pagePath": "pages/index/index",
-				"iconPath": "static/img/home.png",
-				"selectedIconPath": "static/img/active_home.png"
+				"iconPath": "static/img/message.png",
+				"selectedIconPath": "static/img/active_message.png"
 			},
 			{
 				"text": "工作台",

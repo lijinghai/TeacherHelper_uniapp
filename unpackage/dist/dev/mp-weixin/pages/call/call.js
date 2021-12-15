@@ -212,6 +212,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 var _classifyData = _interopRequireDefault(__webpack_require__(/*! @/common/classify.data.js */ 302));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}var _default =
 {
   data: function data() {
@@ -221,16 +222,18 @@ var _classifyData = _interopRequireDefault(__webpack_require__(/*! @/common/clas
       scrollTop: 0, //tab标题的滚动条位置
       current: 0, // 预设当前项的值
       menuHeight: 0, // 左边菜单的高度
-      menuItemHeight: 0 // 左边菜单item的高度
-    };
+      menuItemHeight: 0, // 左边菜单item的高度
+      keywords: '' };
+
   },
   computed: {},
 
 
   methods: {
     // 搜索
-    searchUserByKey: function searchUserByKey() {
-      this.loadInfo();
+    searchUserByKey: function searchUserByKey(value) {
+      // this.loadInfo()
+      this.$u.toast('搜索内容为：' + value);
     },
     loadInfo: function loadInfo() {
       // this.$http.get(this.queryUserByKeyWord,{params:{'keyword':this.keyword}}).then(res=>{
