@@ -3,7 +3,18 @@
 		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
 	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		// {
+		// 	"path": "pages/test/test02",
+		// 	"style": {
 
+		// 	}
+		// },
+		// {
+		// 	"path": "pages/test/test01",
+		// 	"style": {
+
+		// 	}
+		// },
 		{
 			"path": "pages/login/login_v2",
 			"style": {
@@ -132,102 +143,102 @@
 			}
 		},
 		{
-			"path":"pages/getCode/index",
-			"style":{}
-		},{
-			"path":"pages/getCode/edit",
-			"style":{}
-		},
-		{
-			"path":"pages/history/index",
-			"style":{}
-		},
-		{
-			"path":"pages/history/edit",
+			"path": "pages/getCode/index",
+			"style": {}
+		}, {
+			"path": "pages/getCode/edit",
 			"style": {}
 		},
 		{
-			"path":"pages/history/company",
-			 "permission": {
-			    "scope.userLocation": {
-			      "desc": "获取用户位置，制作地图定位功能"
-			    }
-			  },
-			"style":{
-				"navigationBarTitleText":"拍照"
+			"path": "pages/history/index",
+			"style": {}
+		},
+		{
+			"path": "pages/history/edit",
+			"style": {}
+		},
+		{
+			"path": "pages/history/company",
+			"permission": {
+				"scope.userLocation": {
+					"desc": "获取用户位置，制作地图定位功能"
+				}
+			},
+			"style": {
+				"navigationBarTitleText": "拍照"
 			}
 		},
 		{
-			"path":"pages/select/index",
-			"style":{}
+			"path": "pages/select/index",
+			"style": {}
 		},
 		{
-			"path":"pages/onlyCode/index",
-			"style":{}
+			"path": "pages/onlyCode/index",
+			"style": {}
 		},
 		{
-			"path":"pages/getCode/getScan",
-			"style":{}
+			"path": "pages/getCode/getScan",
+			"style": {}
 		},
 		{
-			"path":"pages/getCode/getNum",
-			"style":{}
+			"path": "pages/getCode/getNum",
+			"style": {}
 		},
 		{
-			"path":"components/getCodeItem/index",
-			"style":{}
+			"path": "components/getCodeItem/index",
+			"style": {}
 		},
 		{
-			"path":"pages/identity/index",
-			"style":{}
+			"path": "pages/identity/index",
+			"style": {}
 		},
 		{
-			"path":"pages/attest/index",
-			"style":{}
+			"path": "pages/attest/index",
+			"style": {}
 		},
 		{
-			"path":"pages/attest/formal",
-			"style":{}
+			"path": "pages/attest/formal",
+			"style": {}
 		},
 		{
-			"path":"pages/attest/personal",
-			"style":{}
+			"path": "pages/attest/personal",
+			"style": {}
 		},
 		{
-			"path":"pages/attest/over",
-			"style":{}
+			"path": "pages/attest/over",
+			"style": {}
 		},
 		{
-			"path":"pages/demo/index",
-			"style":{}
+			"path": "pages/demo/index",
+			"style": {}
 		},
 		{
-			"path":"pages/call/call",
-			"style":{}
+			"path": "pages/call/call",
+			"style": {}
 		},
 		{
-			"path":"pages/call/callDetail",
-			"style":{}
+			"path": "pages/call/callDetail",
+			"style": {}
 		},
 		{
-			"path":"pages/work/index",
-			"style":{}
+			"path": "pages/work/index",
+			"style": {}
 		},
 		{
-			"path":"pages/msg/details",
-			"style":{}
+			"path": "pages/msg/details",
+			"style": {}
 		},
 		{
-			"path":"pages/msg/examine-item",
-			"style":{}
+			"path": "pages/msg/examine-item",
+			"style": {}
 		},
 		{
-			"path":"pages/msg/form",
-			"style":{}
+			"path": "pages/msg/form",
+			"style": {}
 		},
 		{
-			"path":"pages/msg/list-item",
-			"style":{}
+			"path": "pages/msg/list-item",
+			"style": {}
 		}
 
 	],

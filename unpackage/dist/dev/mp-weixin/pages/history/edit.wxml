@@ -1,1 +1,0 @@
-<view><cu-custom vue-id="ef8458b0-1" bgColor="bg-gradual-blue" isBack="{{true}}" bind:__l="__l" vue-slots="{{['backText','content']}}"><view slot="backText">返回</view><view slot="content">编辑上传信息页面</view></cu-custom></view>

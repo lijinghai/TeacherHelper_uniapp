@@ -18,7 +18,8 @@
         },
         /* 模块配置 */
         "modules" : {
-            "Geolocation" : {}
+            "Geolocation" : {},
+            "OAuth" : {}
         },
         /* 应用发布信息 */
         "distribute" : {
@@ -57,7 +58,15 @@
             "sdkConfigs" : {
                 "maps" : {},
                 "ad" : {},
-                "geolocation" : {}
+                "geolocation" : {},
+                "oauth" : {
+                    "weixin" : {
+                        "appid" : "wx56284897b844dcac",
+                        "appsecret" : "",
+                        "UniversalLinks" : ""
+                    },
+                    "univerify" : {}
+                }
             },
             "icons" : {
                 "android" : {

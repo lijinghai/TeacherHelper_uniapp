@@ -5,12 +5,23 @@
 		// 	console.log('App Launch')
 		// },
 		onShow: function() {
-			// console.log('App Show')
-			// console.log('================================================================================')
-			// console.log()
-			// console.log('如果您对我的软件有什么建议或者需要该软件的数据库请联系我 MyEmail:lijinghailjh@163.com')
-			// console.log()
-			// console.log('================================================================================')
+
+		// for (let i = 0; i<10000; i++) {
+		// 	((i)=>{
+		// 		setTimeout(()=>{
+		// 			console.log('%c ',`
+		// 			font-size:150px;
+		// 			padding-left:1000px;
+		// 			background:url(https://cdn.jsdelivr.net/gh/Dorian1015/cdn/img/custom/tuxiang.jpg);
+		// 			background-repeat:no-repeat;
+		// 			background-size:60px;
+		// 			background-position:${i/5}% ${50+Math.sin(i/5)*50}%;`
+		// 			);
+		// 		},i*100)
+		// 	})(i)
+		// }
+	
+			
 			 console.log(' __    _         _   _                       __               _')
 			    console.log('[  |  (_)       (_) (_)                     [  |             (_)')
 			    console.log(' | |  __        __  __   _ .--.   .--./)     | |--.   ,--.   __')
